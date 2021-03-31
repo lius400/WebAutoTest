@@ -26,3 +26,6 @@ def get_headers_driver():
     driver.implicitly_wait(30)
     driver.maximize_window()
     return driver
+
+#单例模式实现，使用此实例
+CustomDriver = get_headers_driver()
